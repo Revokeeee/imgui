@@ -28,6 +28,9 @@ ipch
 ## Getting files created in JSON/Schemas/Catalog/ from a VS2022 update
 JSON/
 
+/bin-int/
+/bin
+
 ## Commonly used CMake directories
 build*/
 

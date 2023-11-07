@@ -1,6 +1,8 @@
 project "ImGui"
     kind "StaticLib"
     language "C++"
+    cppdialect "C++20"
+    staticruntime "On"
 
     
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -12,6 +14,7 @@ project "ImGui"
 		"imgui.h",
 		"imgui.cpp",
 		"imgui_draw.cpp",
+        "imgui_tables.cpp",
 		"imgui_internal.h",
 		"imgui_widgets.cpp",
 		"imstb_rectpack.h",
@@ -22,14 +25,10 @@ project "ImGui"
     
 	filter "system:windows"
         systemversion "latest"
-        cppdialect "C++20"
-        staticruntime "On"
 
     filter "system:linux"
         pic "On"
         systemversion "latest"
-        cppdialect "C++20"
-        staticruntime "On"
 
     filter "configurations:Debug"
         runtime "Debug"
