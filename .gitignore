@@ -1,3 +1,7 @@
+# build files
+bin/
+bin-int/
+
 ## OSX artifacts
 .DS_Store
 
